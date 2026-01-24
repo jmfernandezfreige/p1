@@ -17,9 +17,10 @@ Para ello, se hace un **"fork"** del repositorio aportado en el enunciado de la 
 
 ### Git clone: 
 Sirve para clonar un repositorio del cual se pasa su URL por parámetro. Clonar quiere decir hacer una copia del repositorio remoto al ordenador local o el codespace en el que se está trabajando. 
-Realizando el "fork" se está obteniendo una copia en la nube del repositorio "gitt-3-pat/p1" y sobre el que se pueden realizar cambios. Al abrir un codespace para probar los comandos git, Github crea una copia en local sobre la que se podrá trabajar en el repositorio. Esta copia es equivalente a lo que se logra mediante el comando **git clone**.
 
-Por tanto, para pode probar el comando se realiza el clonado del repositorio en un directorio temporal al que se accede mediante el comando `cd /tmp`.
+Realizando el "fork" se está obteniendo una copia en la nube del repositorio "gitt-3-pat/p1" y sobre el que se pueden realizar cambios. Al abrir un codespace para probar los comandos git, **Github crea una copia en local** sobre la que se podrá trabajar en el repositorio. Esta copia es equivalente a lo que se logra mediante el comando **git clone**.
+
+Por tanto, para poder probar el comando se realiza el clonado del repositorio en un **directorio temporal** al que se accede mediante el comando `cd /tmp`.
 Dentro de este directorio se ejecuta el comando indicado:
 `git clone https://github.com/jmfernandezfreige/p1`.
 
@@ -33,16 +34,17 @@ remote: Total 26 (delta 2), reused 0 (delta 0), pack-reused 16 (from 2)
 Receiving objects: 100% (26/26), 125.40 KiB | 41.80 MiB/s, done.
 Resolving deltas: 100% (2/2), done.
 ```
-Tras el clonado del repositorio correctamente en el directorio temporal y dado que no se necesita para nada más, se borra de esta carpeta temporal el repo clonado con `rm -rf p1`
+Tras el clonado del repositorio correctamente en el directorio temporal y dado que no se necesita para nada más, se borra de esta carpeta temporal el repositorio clonado con `rm -rf p1`
+
 Finalmente se vuelve a la rama principal del repositorio. 
 
 ### Git status:
-Sirve para comprobar el estado de la rama actual dentro del repositorio. Git status da tres tipos de información:
+Sirve para **comprobar el estado de la rama actual** dentro del repositorio. Git status da tres tipos de información:
 * La rama actual
-* Cómo de sincronizado está con la copia del repositorio remoto: "X" commits por delante o por detrás.
+* Cómo de sincronizada está con la copia del repositorio remoto: "X" commits por delante o por detrás.
 * Estado de los archivos y cambios: pueden ser nuevos y no añadidos a git (Untracked), modificados sin confirmación (Modified), preparados para confirmar (Staged).
 
-Para probar la distinta información que puede dar el comando, se añade un fichero que queda en el repositorio llamado "git.txt" y que permite también probar el uso de `git add`, `git commit`y `git push`.
+Para probar la distinta información que puede dar el comando, se añade un fichero que queda en el repositorio llamado "git.txt" y que permite también probar el uso de `git add`, `git commit` y `git push`.
 
 **Log ejemplo**:
 
@@ -65,7 +67,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-<ins>Cambios preparados (tras git add):</ins>
+<ins>Cambios preparados (tras `git add`):</ins>
 ```bash
 On branch main
 Your branch is up to date with 'origin/main'.
@@ -75,7 +77,7 @@ Changes to be committed:
   new file:   git.txt
 ```
 
-<ins>Cambios confirmados pero no subidos (tras git commit):</ins>
+<ins>Cambios confirmados pero no subidos (tras `git commit`):</ins>
 ```bash
 On branch main
 Your branch is ahead of 'origin/main' by 1 commit.
@@ -84,10 +86,10 @@ Your branch is ahead of 'origin/main' by 1 commit.
 nothing to commit, working tree clean
 ```
 
-Como se ha podido demostrar, el comando git status permite conocer la información de la rama actual, los cambios que reconoce y la comparación de versiones entre la rama original y la rama de trabajo.
+Como se ha podido demostrar, el comando `git status` permite conocer la información de la rama actual, los cambios que reconoce y la comparación de versiones entre la rama original y la rama de trabajo.
 
 ### Git add:
-El comando permite añadir una serie de cambios a una rama de prueba preparándolos para su confirmación y su posterior publicación en el repositorio remoto. Es el paso a la rama de prueba o "staging" en un proyecto.
+El comando permite **añadir una serie de cambios** a una rama de prueba preparándolos para su confirmación y su posterior publicación en el repositorio remoto. Es el paso a la rama de prueba o "staging" en un proyecto.
 
 En el ejemplo empleado con el fichero `git.txt` se puede emplear `git add git.txt` para añadir únicamente el fichero nuevo o `git add .` que añade todos los ficheros nuevos o cambiados en el directorio actual.
 
@@ -106,8 +108,10 @@ En el ejemplo, se confirma el cambio realizado al añadir el fichero de prueba.
 
 ### Git push:
 Sirve para subir los cambios confirmados por commits al repositorio remoto.
-El comando funciona indicando el **destino** de los cambios confirmados (normalmente "origin", ruta del repositorio en la nube) y el **origen o el objeto** que se "sube" a la rama original (la rama actual "main").
-En el ejemplo usado para la práctica, tras confirmar los cambios únicamente falta subirlos al repositorio remoto en GitHub tal y como indica el último ejemplo de log para `git status`: `use "git push" to publish your local commits`
+
+El comando funciona indicando el **destino** de los cambios confirmados (normalmente "origin", ruta del repositorio en la nube) y el **origen o el objeto** que se "sube" a la rama original (normalmente "main" la rama actual).
+
+En el ejemplo usado para la práctica, tras confirmar los cambios únicamente falta subirlos al repositorio remoto en GitHub tal y como indica el último ejemplo de log para `git status`: > use "git push" to publish your local commits.
 
 **Log ejemplo**:
 ```bash
@@ -137,7 +141,9 @@ Switched to branch 'main'
 
 
 ## Entorno de desarrollo Java
-Se deben instalar en el equipo Java 17 (o posterior), Maven, editor de código fuente (IntelliJ + VSCode). A continuación se muestra la evidencia de tener los distintos programas instalados en el equipo.
+Se deben instalar en el equipo Java 17 (o posterior), Maven y editor de código fuente (IntelliJ + VSCode).
+
+A continuación se muestra la evidencia de tener los distintos programas instalados en el equipo.
 
 #### Java: 
 ![Prueba de la versión "23.0.1" de Java en el equipo personal](assets/images/version_java.png)
