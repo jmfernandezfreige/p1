@@ -19,28 +19,19 @@ Para ello, se hace un **"fork"** del repositorio aportado en el enunciado de la 
 Sirve para clonar un repositorio del cual se pasa su URL por parámetro. Clonar quiere decir hacer una copia del repositorio remoto al ordenador local o el codespace en el que se está trabajando. 
 Realizando el "fork" se está obteniendo una copia en la nube del repositorio "gitt-3-pat/p1" y sobre el que se pueden realizar cambios. Al abrir un codespace para probar los comandos git, Github crea una copia en local sobre la que se podrá trabajar en el repositorio. Esta copia es equivalente a lo que se logra mediante el comando **git clone**.
 
-Por tanto, para pode probar el comando se realiza el clonado del repositorio en un directorio temporal al que se accede mediante el comando 'cd /tmp'.
+Por tanto, para pode probar el comando se realiza el clonado del repositorio en un directorio temporal al que se accede mediante el comando `cd /tmp`.
 Dentro de este directorio se ejecuta el comando indicado:
-'''git clone https://github.com/jmfernandezfreige/p1'''.
+`git clone https://github.com/jmfernandezfreige/p1`.
 
 **Log tras la ejecución**:
 ```bash
 Cloning into 'p1'...
-remote: Enumerating objects: 3, done.
-remote: Counting objects: 100% (3/3), done.
-remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-Receiving objects: 100% (3/3), done.
->Cloning into 'p1'...
-
-> remote: Enumerating objects: 17, done.
-
->remote: Counting objects: 100% (1/1), done.
-
->remote: Total 17 (delta 0), reused 0 (delta 0), pack-reused 16 (from 2)
-
->Receiving objects: 100% (17/17), 121.16 KiB | 40.39 MiB/s, done.
-
-Para probar el resto de comandos se realizan varios cambios. 
+remote: Enumerating objects: 26, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 26 (delta 2), reused 0 (delta 0), pack-reused 16 (from 2)
+Receiving objects: 100% (26/26), 125.40 KiB | 41.80 MiB/s, done.
+Resolving deltas: 100% (2/2), done.```
 
 ### Git status:
 Sirve para comprobar el estado de la rama actual dentro del repositorio. Git status da tres tipos de información:
