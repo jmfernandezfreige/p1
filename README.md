@@ -45,6 +45,7 @@ Sirve para comprobar el estado de la rama actual dentro del repositorio. Git sta
 Para probar la distinta información que puede dar el comando, se añade un fichero que queda en el repositorio llamado "git.txt" y que permite también probar el uso de `git add`, `git commit`y `git push`.
 
 **Log ejemplo**:
+
 <ins>Sin cambios:</ins>
 ```bash
 On branch main
@@ -124,6 +125,7 @@ To https://github.com/jmfernandezfreige/p1
 Permite el cambio entre ramas para moverse de espacio de trabajo. Además, permite moverse a una rama nueva, creándola y posteriormente situándose en ella (`git checkout -b nueva_rama`).
 
 **Log ejemplo**:
+
 <ins>Tras ejecutar `git checkout -b pruebas`:</ins>
 ```bash
 Switched to a new branch 'pruebas'
