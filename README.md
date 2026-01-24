@@ -15,14 +15,21 @@ Para ello, se hace un **"fork"** del repositorio aportado en el enunciado de la 
 * git push
 * git checkout
 
-Realizando el "fork" se está obteniendo una copia en la nube del repositorio "gitt-3-pat/p1" y sobre el que se pueden realizar cambios. Al abrir un codespace para probar los comandos git, Github crea una copia en local sobre la que se podrá trabajar sobre el repositorio. Esta copia que se hace en local, es equivalente a lo que se logra mediante el comando **git clone**. 
-
 ### Git clone: 
-Sirve para clonar un repositorio del cual se pasa su URL por parámetro. Clonar quiere decir, hacer una copia del repositorio remoto al ordenador local o el codespace en el que se está trabajando. 
-Por tanto, se ejecuta el siguiente comando para trabajar sobre el repositorio en la nube (fork de gitt-3-pat/p1):
-'git clone https://github.com/jmfernandezfreige/p1'.
+Sirve para clonar un repositorio del cual se pasa su URL por parámetro. Clonar quiere decir hacer una copia del repositorio remoto al ordenador local o el codespace en el que se está trabajando. 
+Realizando el "fork" se está obteniendo una copia en la nube del repositorio "gitt-3-pat/p1" y sobre el que se pueden realizar cambios. Al abrir un codespace para probar los comandos git, Github crea una copia en local sobre la que se podrá trabajar en el repositorio. Esta copia es equivalente a lo que se logra mediante el comando **git clone**.
+
+Por tanto, para pode probar el comando se realiza el clonado del repositorio en un directorio temporal al que se accede mediante el comando 'cd /tmp'.
+Dentro de este directorio se ejecuta el comando indicado:
+'''git clone https://github.com/jmfernandezfreige/p1'''.
 
 **Log tras la ejecución**:
+```bash
+Cloning into 'p1'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
 >Cloning into 'p1'...
 
 > remote: Enumerating objects: 17, done.
