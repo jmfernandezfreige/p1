@@ -17,31 +17,45 @@ Para ello, se hace un **"fork"** del repositorio aportado en el enunciado de la 
 
 Realizando el "fork" se está obteniendo una copia en la nube del repositorio "gitt-3-pat/p1" y sobre el que se pueden realizar cambios. Al abrir un codespace para probar los comandos git, Github crea una copia en local sobre la que se podrá trabajar sobre el repositorio. Esta copia que se hace en local, es equivalente a lo que se logra mediante el comando **git clone**. 
 
+### Git clone: 
+Sirve para clonar un repositorio del cual se pasa su URL por parámetro. Clonar quiere decir, hacer una copia del repositorio remoto al ordenador local o el codespace en el que se está trabajando. 
+Por tanto, se ejecuta el siguiente comando para trabajar sobre el repositorio en la nube (fork de gitt-3-pat/p1):
+'git clone https://github.com/jmfernandezfreige/p1'.
+
+**Log tras la ejecución**:
+>Cloning into 'p1'...
+>remote: Enumerating objects: 17, done.
+>remote: Counting objects: 100% (1/1), done.
+>remote: Total 17 (delta 0), reused 0 (delta 0), pack-reused 16 (from 2)
+>Receiving objects: 100% (17/17), 121.16 KiB | 40.39 MiB/s, done.
+
 Para probar el resto de comandos se realizan varios cambios. 
 
-#### git status:
+### Git status:
 Sirve para comprobar el estado de la rama actual dentro del repositorio. Git status da tres tipos de información:
 * La rama actual
 * Cómo de sincronizado está con la copia del repositorio remoto: "X" commits por delante o por detrás.
 * Estado de los archivos y cambios: pueden ser nuevos y no añadidos a git (Untracked), modificados sin confirmación (Modified), preparados para confirmar (staged).
 
 **Log ejemplo**:
+> On branch main
+> Your branch is up to date with 'origin/main'.
+> nothing to commit, working tree clean
 
 
-
-#### git add:
+### Git add:
 **Log ejemplo**:
 
-#### git commit: 
+### git commit: 
 Sirve para confirmar un conjunto de cambios que ya se han preparado y añadido a la rama de Staging.
 **Log ejemplo**:
 
-#### git push:
+### git push:
 Sirve para subir los cambios confirmados por commits al repositorio remoto.
 **Log ejemplo**:
 
 #### git checkout: 
-Permite el cambio entre ramas para moverse de espacio de trabajo. Además, permite moverse a una rama nueva, creándola y posteriormente situándose en ella (*git checkout -b nueva_rama*).
+Permite el cambio entre ramas para moverse de espacio de trabajo. Además, permite moverse a una rama nueva, creándola y posteriormente situándose en ella ('git checkout -b nueva_rama').
 **Log ejemplo**:
 
 ## Entorno de desarrollo Java
