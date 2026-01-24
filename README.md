@@ -23,11 +23,14 @@ Por tanto, se ejecuta el siguiente comando para trabajar sobre el repositorio en
 'git clone https://github.com/jmfernandezfreige/p1'.
 
 **Log tras la ejecución**:
->Cloning into 'p1'... \n
->remote: Enumerating objects: 17, done.
+>Cloning into 'p1'...
+
+> remote: Enumerating objects: 17, done.
 
 >remote: Counting objects: 100% (1/1), done.
+
 >remote: Total 17 (delta 0), reused 0 (delta 0), pack-reused 16 (from 2)
+
 >Receiving objects: 100% (17/17), 121.16 KiB | 40.39 MiB/s, done.
 
 Para probar el resto de comandos se realizan varios cambios. 
@@ -40,7 +43,9 @@ Sirve para comprobar el estado de la rama actual dentro del repositorio. Git sta
 
 **Log ejemplo**:
 > On branch main
+
 > Your branch is up to date with 'origin/main'.
+
 > nothing to commit, working tree clean
 
 
