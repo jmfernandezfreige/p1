@@ -1,0 +1,2 @@
+Archivo creado para comprobar las diferentes salidas de "git status"
+Sirve para tener un cambio real con el cual se pueden ejecutar comandos como "git add git.txt"; "git commit -m "Añadir git.txt"; y "git push origin main".
